@@ -1,1 +1,2 @@
-/Users/jpvelez/.homesick/repos/dotfiles/home/.homesick/repos/dotfiles/home/.path
+# Add Postgres.app to the path
+PATH="~/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
