@@ -1,2 +1,5 @@
+# Add `/usr/local/bin` to the `$PATH`
+export PATH="/usr/local/bin:$PATH"
+
 # Add Postgres.app to the path
 export PATH="/Users/jpvelez/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
