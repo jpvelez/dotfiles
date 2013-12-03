@@ -4,11 +4,10 @@ brew install brew-cask
 
 brew cask install alfred
 brew cask alfred link
-brew cask install clean-my-mac 
+brew cask install cleanmymac 
 brew cask install divvy
 brew cask install dropbox
 brew cask install evernote
-brew cask install fantastical
 brew cask install firefox
 brew cask install google-chrome
 brew cask install hipchat
@@ -17,6 +16,7 @@ brew cask install onepassword
 brew cask install sublime-text
 brew cask install soulver 
 brew cask install spotify
+brew cask install skype
 brew cask install totalfinder
 brew cask install things
 brew cask install tilemill
@@ -25,3 +25,4 @@ brew cask install transmission
 brew cask install trim-enabler
 brew cask install virtualbox
 brew cask install vlc
+

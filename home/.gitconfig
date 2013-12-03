@@ -46,3 +46,6 @@
 
 [push]
 	default = matching
+[user]
+	email = jpvelez@gmail.com
+	name = Juan-Pablo Velez
