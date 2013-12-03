@@ -10,6 +10,7 @@ brew cask install dropbox
 brew cask install evernote
 brew cask install firefox
 brew cask install google-chrome
+brew cask install google-drive
 brew cask install hipchat
 brew cask install iterm2
 brew cask install onepassword
