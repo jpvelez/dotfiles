@@ -10,6 +10,10 @@ export HISTCONTROL=ignoredups
 export LANG="en_US"
 export LC_ALL="en_US.UTF-8"
 
+# Define homebrew paths, using in postgres aliases
+export BREW_BASE="/usr/local/"
+export BREW_BIN="$BREW_BASE/bin"
+
 # Highlight section titles in manual pages
 export LESS_TERMCAP_md="$ORANGE"
 
@@ -18,3 +22,15 @@ export MANPAGER="less -X"
 
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto"
+
+# Define where postgres stores it's data
+export PGDATA="/usr/local/var/postgres/"
+
+# Enable virtualenvwrapper commands 
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+
+# Need this to properly run bundler on civicinsight repo 
+export GITHUB_BOT_USERNAME='civicbot'
+export GITHUB_BOT_PASSWORD='S36Qn4f7mA8b9AvZ'

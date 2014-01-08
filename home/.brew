@@ -20,10 +20,6 @@ install vim --override-system-vi
 tap homebrew/dupes
 install homebrew/dupes/grep
 
-# Instrall GNU c and fortran compilers, to make numpy / scipy happy
-install apple-gcc42
-install gfortran
-
 # Install htop
 install htop-osx
 
@@ -38,6 +34,15 @@ install tmux
 install ack		# grep for source code
 install tree	# recursive directory listing command
 install webkit2png	# captures webpage screenshots 
+
+# Install GNU c and fortran compilers, freetype, to make numpy / scipy happy
+install apple-gcc42
+install gfortran
+install freetype
+
+
+# Install python
+install python
 
 # Remove outdated versions from the cellar
 cleanup
