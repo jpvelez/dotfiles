@@ -51,3 +51,5 @@
 [user]
 	email = jpvelez@gmail.com
 	name = Juan-Pablo Velez
+[credential]
+	helper = osxkeychain
