@@ -40,9 +40,11 @@ install apple-gcc42
 install gfortran
 install freetype
 
-
 # Install python
 install python
+
+# Install heroku toolbelt
+install heroku-toolbelt
 
 # Remove outdated versions from the cellar
 cleanup
