@@ -6,10 +6,21 @@ upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-install coreutils
+install coreutils --default-names
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-install findutils
+install findutils --default-names
+
+# Other CNU tools
+install gnu-indent --default-namess
+install gnutls --default-names
+install gnu-tar --default-names
+install gawk --default-names
+
+tap homebrew/dupes
+install homebrew/dupes/grep --default-names
+install homebrew/dupes/gnu-sed --default-name
+
 
 # Install Bash 4
 install bash
@@ -17,23 +28,23 @@ install bash
 # Install more recent versions of vim and grep
 install vim --override-system-vi
 
-tap homebrew/dupes
-install homebrew/dupes/grep
-
 # Install htop
 install htop-osx
-
-# Install wget with IRI support
-install wget --enable-iri
 
 # Install other useful binaries
 install git
 install sqlite
 install tmux
 
+# Install useful command line tools
 install ack		# grep for source code
+install jq		# grep for json
+install json2csv
 install tree	# recursive directory listing command
 install webkit2png	# captures webpage screenshots 
+install parallel
+
+install wget --enable-iri 	# wget with IRI support
 
 # Install GNU c and fortran compilers, freetype, to make numpy / scipy happy
 install apple-gcc42
