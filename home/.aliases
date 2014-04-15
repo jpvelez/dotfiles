@@ -109,3 +109,6 @@ alias reload="exec $SHELL -l"
 
 # Shortcut for ipython
 alias p="ipython"
+
+# Enter data virtualenv by default
+workon data
