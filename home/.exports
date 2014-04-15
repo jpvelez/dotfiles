@@ -31,20 +31,8 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
 
-# Need this to properly run bundler on civicinsight repo 
-export GITHUB_BOT_USERNAME='civicbot'
-export GITHUB_BOT_PASSWORD='S36Qn4f7mA8b9AvZ'
-
 # This is so that psycopg2 package works.
 export DYLD_FALLBACK_LIBRARY_PATH=/Applications/Postgres93.app/Contents/MacOS/lib:$DYLD_LIBRARY_PATH
-
-
-# Point Civic Insight to test analytics API in local environment.
-export SEGMENT_IO_API_LOCAL='gkl6bds22h'
-export ANALYTICS_API='http://localhost:5000/'
-export LOCAL_POSTGRESQL_URL='postgres://postgres:postgres@localhost:5432/civicinsight-dev'
-export HEROKU_POSTGRESQL_CHARCOAL_URL='postgres://u51h5verlcq9p8:pb6mn0ntobjcm4b0t8vhcj5en30@ec2-23-23-179-203.compute-1.amazonaws.com:5532/ddb7m40nhb3ima'
-
 
 # Settings so Dedupe can do parallel processing
 export CFLAGS=-Qunused-arguments
