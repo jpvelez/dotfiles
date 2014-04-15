@@ -1,5 +1,15 @@
+# Add Postgres.app to the path
+export PATH="/Users/jpvelez/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+
 # Add `/usr/local/bin` to the `$PATH`
 export PATH="/usr/local/bin:$PATH"
 
-# Add Postgres.app to the path
-export PATH="/Users/jpvelez/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+# Add routego to the path
+export PATH="/Users/jpvelez/src/routino-2.6/web/bin:$PATH"
+
+# Use gsed and gtar without the g prefix
+PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
+
+# Access man pages of GNU utils with normal names 
+MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
