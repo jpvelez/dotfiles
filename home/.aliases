@@ -111,4 +111,5 @@ alias reload="exec $SHELL -l"
 alias p="ipython"
 
 # Enter data virtualenv by default
-workon data
+workon wnyc
+cd ~/shron/wnyc-ltv/drake-test
