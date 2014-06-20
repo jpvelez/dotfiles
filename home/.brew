@@ -11,11 +11,12 @@ install coreutils --default-names
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 install findutils --default-names
 
-# Other CNU tools
+# Other GNU tools
 install gnu-indent --default-namess
 install gnutls --default-names
 install gnu-tar --default-names
 install gawk --default-names
+install parallel
 
 tap homebrew/dupes
 install homebrew/dupes/grep --default-names
@@ -56,6 +57,9 @@ install python
 
 # Install heroku toolbelt
 install heroku-toolbelt
+
+# Install Redis
+install redis
 
 # Remove outdated versions from the cellar
 cleanup
