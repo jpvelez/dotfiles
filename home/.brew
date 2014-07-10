@@ -17,6 +17,7 @@ install gnutls --default-names
 install gnu-tar --default-names
 install gawk --default-names
 install parallel
+install nmap
 
 tap homebrew/dupes
 install homebrew/dupes/grep --default-names
