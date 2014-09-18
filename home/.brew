@@ -62,5 +62,8 @@ install heroku-toolbelt
 # Install Redis
 install redis
 
+# Install Hadoop and Pig
+install pig
+
 # Remove outdated versions from the cellar
 cleanup

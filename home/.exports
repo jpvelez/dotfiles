@@ -37,3 +37,6 @@ export DYLD_FALLBACK_LIBRARY_PATH=/Applications/Postgres93.app/Contents/MacOS/li
 # Settings so Dedupe can do parallel processing
 export CFLAGS=-Qunused-arguments
 export CPPFLAGS=-Qunused-arguments
+
+# Tell Pig where to find Java. 
+JAVA_HOME="/usr/"
