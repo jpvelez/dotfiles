@@ -39,4 +39,4 @@ export CFLAGS=-Qunused-arguments
 export CPPFLAGS=-Qunused-arguments
 
 # Tell Pig where to find Java. 
-JAVA_HOME="/usr/"
+export JAVA_HOME="$(/usr/libexec/java_home)"
