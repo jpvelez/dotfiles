@@ -8,8 +8,11 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/Users/jpvelez/src/routino-2.6/web/bin:$PATH"
 
 # Use gsed and gtar without the g prefix
-PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 
 # Access man pages of GNU utils with normal names 
 MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
+
+# Add spark to the path
+export PATH="~/polynumeral/spark/bin/:$PATH"
