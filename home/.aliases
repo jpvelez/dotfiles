@@ -111,3 +111,6 @@ alias reload="exec $SHELL -l"
 alias p="ipython"
 alias ps='IPYTHON=1 ~/polynumeral/spark/bin/pyspark'
 
+# Shortcut for growl notifying that a process is done.
+# sudo gem install terminal-notifier
+alias lmk='terminal-notifier -message "Job done!"'
