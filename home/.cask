@@ -1,10 +1,5 @@
 # Install native apps
-brew tap phinze/homebrew-cask
-brew install brew-cask
-
 brew cask install alfred
-brew cask alfred link
-brew cask install crashplan
 brew cask install cleanmymac 
 brew cask install divvy
 brew cask install dropbox
@@ -22,6 +17,7 @@ brew cask install skype
 brew cask install totalfinder
 brew cask install things
 brew cask install tilemill
+brew cask install mactex
 brew cask install the-unarchiver
 brew cask install transmission
 brew cask install trim-enabler

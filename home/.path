@@ -16,3 +16,7 @@ MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
 
 # Add spark to the path
 export PATH="~/polynumeral/spark/bin/:$PATH"
+export PATH="~/polynumeral/spark/ec2/:$PATH"
+
+# Add oracle drivers to the path
+export DYLD_LIBRARY_PATH="/opt/oracle/instantclient_11_2:$DYLD_LIBRARY_PATH"

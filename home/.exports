@@ -20,8 +20,6 @@ export LESS_TERMCAP_md="$ORANGE"
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
-# Always enable colored `grep` output
-export GREP_OPTIONS="--color=auto"
 
 # Define where postgres stores it's data
 export PGDATA="/usr/local/var/postgres/"
@@ -40,3 +38,8 @@ export CPPFLAGS=-Qunused-arguments
 
 # Tell Pig where to find Java. 
 export JAVA_HOME="$(/usr/libexec/java_home)"
+
+# Tell docker client to look for docker daemon on the boot2docker linux VM run by virtualbox.  
+export DOCKER_TLS_VERIFY=1
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/jpvelez/.boot2docker/certs/boot2docker-vm

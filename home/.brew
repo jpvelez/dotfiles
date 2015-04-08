@@ -1,69 +1,77 @@
 # Make sure we’re using the latest Homebrew
-update
+brew update
 
 # Upgrade any already-installed formulae
-upgrade
+brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-install coreutils --default-names
+brew install coreutils --default-names
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-install findutils --default-names
+brew install findutils --default-names
 
 # Other GNU tools
-install gnu-indent --default-namess
-install gnutls --default-names
-install gnu-tar --default-names
-install gawk --default-names
-install parallel
-install nmap
+brew install gnu-indent --default-namess
+brew install gnutls --default-names
+brew install gnu-tar --default-names
+brew install gawk --default-names
+brew install parallel
+brew install nmap
 
 tap homebrew/dupes
-install homebrew/dupes/grep --default-names
-install homebrew/dupes/gnu-sed --default-name
+brew install homebrew/dupes/grep --default-names
+brew install homebrew/dupes/gnu-sed --default-name
 
 
 # Install Bash 4
-install bash
+brew install bash
 
 # Install more recent versions of vim and grep
-install vim --override-system-vi
+brew install vim --override-system-vi
 
 # Install htop
-install htop-osx
+brew install htop-osx
 
 # Install other useful binaries
-install git
-install sqlite
-install tmux
+brew install git
+brew install sqlite
+brew install tmux
 
 # Install useful command line tools
-install ack		# grep for source code
-install jq		# grep for json
-install json2csv
-install tree	# recursive directory listing command
-install webkit2png	# captures webpage screenshots 
-install parallel
+brew install ack		# grep for source code
+brew install jq		# grep for json
+brew install json2csv
+brew install tree	# recursive directory listing command
+brew install webkit2png	# captures webpage screenshots
+brew install parallel
 
-install wget --enable-iri 	# wget with IRI support
+brew install wget --enable-iri 	# wget with IRI support
 
 # Install GNU c and fortran compilers, freetype, to make numpy / scipy happy
-install apple-gcc42
-install gfortran
-install freetype
+brew install apple-gcc42
+brew install gfortran
+brew install freetype
 
 # Install python
-install python
+brew install python
 
 # Install heroku toolbelt
-install heroku-toolbelt
+brew install heroku-toolbelt
 
 # Install Redis
-install redis
+brew install redis
 
 # Install Hadoop and Pig
-install pig
+brew install pig
+
+# Install packer
+brew tap homebrew/binary
+brew install packer
+
+# Install Beaker
+brew install beaker
+brew install docker
 
 # Remove outdated versions from the cellar
-cleanup
+brew cleanup
