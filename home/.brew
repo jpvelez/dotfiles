@@ -53,25 +53,8 @@ brew install apple-gcc42
 brew install gfortran
 brew install freetype
 
-# Install python
-brew install python
-
-# Install heroku toolbelt
-brew install heroku-toolbelt
-
-# Install Redis
-brew install redis
-
-# Install Hadoop and Pig
-brew install pig
-
-# Install packer
-brew tap homebrew/binary
-brew install packer
-
-# Install Beaker
-brew install beaker
-brew install docker
+# Install keybase
+# brew install keybase
 
 # Remove outdated versions from the cellar
 brew cleanup
