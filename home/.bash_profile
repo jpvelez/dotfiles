@@ -29,5 +29,6 @@ done
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-# Start python data virtual environment.
-# workon data
+# added by Anaconda3 2.3.0 installer
+export PATH="/Users/jpvelez/anaconda/bin:$PATH"
+
