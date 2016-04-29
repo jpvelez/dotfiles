@@ -4,6 +4,12 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
+# BASH #
+########
+brew install bash
+
+# GNU UNIX COMMANDS #
+######################
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils --default-names
@@ -11,50 +17,44 @@ brew install coreutils --default-names
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils --default-names
 
-# Other GNU tools
-brew install gnu-indent --default-namess
-brew install gnutls --default-names
-brew install gnu-tar --default-names
-brew install gawk --default-names
+brew tap homebrew/dupes
+brew install gnu-which --with-default-names
+brew install gnu-sed --with-default-names
+brew install gawk --with-default-names
+brew install grep --with-default-names
+brew install gnu-tar --with-default-names
+brew install gzip --with-default-names
 brew install parallel
 brew install nmap
-
-tap homebrew/dupes
-brew install homebrew/dupes/grep --default-names
-brew install homebrew/dupes/gnu-sed --default-name
-
-
-# Install Bash 4
-brew install bash
-
-# Install more recent versions of vim and grep
-brew install vim --override-system-vi
-
-# Install htop
-brew install htop-osx
-
-# Install other useful binaries
-brew install git
-brew install sqlite
-brew install tmux
-
-# Install useful command line tools
-brew install ack		# grep for source code
-brew install jq		# grep for json
-brew install json2csv
-brew install tree	# recursive directory listing command
-brew install webkit2png	# captures webpage screenshots
-brew install parallel
-
 brew install wget --enable-iri 	# wget with IRI support
 
-# Install GNU c and fortran compilers, freetype, to make numpy / scipy happy
+# UNIX TOOLS #
+##############
+# More recent versions of osx cli tools
+brew install git
+brew install make
+brew install less
+brew install vim --override-system-vi
+
+# Other useful tools
+brew install htop-osx
+brew install sqlite
+brew install tmux
+brew install rsync
+brew install jq		# grep for json
+brew install tree	# recursive directory listing command
+brew install keybase
+
+# LANGUAGES #
+#############
+brew install python
+brew install scala
+
+# COMPILERS #
+#############
 brew install apple-gcc42
 brew install gfortran
 brew install freetype
-
-# Install keybase
-# brew install keybase
 
 # Remove outdated versions from the cellar
 brew cleanup
