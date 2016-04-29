@@ -2,6 +2,7 @@
 brew cask install 1password
 brew cask install anki
 brew cask install atom
+brew cask install caffeine
 brew cask install cleanmymac 
 brew cask install dropbox
 brew cask install flux
