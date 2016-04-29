@@ -44,6 +44,8 @@ brew install rsync
 brew install jq		# grep for json
 brew install tree	# recursive directory listing command
 brew install keybase
+brew tap thoughtbot/formulae
+brew install rcm        # dotfile manager
 
 # LANGUAGES #
 #############
