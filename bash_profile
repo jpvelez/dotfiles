@@ -6,3 +6,6 @@ done
 unset file
 
 
+
+# added by Anaconda3 4.0.0 installer
+export PATH="/Users/jpvelez/anaconda/bin:$PATH"

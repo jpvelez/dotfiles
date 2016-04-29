@@ -1,7 +1,7 @@
 My Dotfiles
 ===========
 
-These are my personal dotfiles. They're adapter from Mathias Bynens' [dotfiles][1] are managed using [homesick][2].
+These are my personal dotfiles. They're adapter from Mathias Bynens' [dotfiles][1].
 
 The ~/.brew file contains all my [homebrew packages][3].
 
