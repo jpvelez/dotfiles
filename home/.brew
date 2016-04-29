@@ -12,10 +12,10 @@ brew install bash
 ######################
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-brew install coreutils --default-names
+brew install coreutils --with-default-names
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew install findutils --default-names
+brew install findutils --with-default-names
 
 brew tap homebrew/dupes
 brew install gnu-which --with-default-names
@@ -26,7 +26,7 @@ brew install gnu-tar --with-default-names
 brew install gzip --with-default-names
 brew install parallel
 brew install nmap
-brew install wget --enable-iri 	# wget with IRI support
+brew install wget --with-iri 	# wget with IRI support
 
 # UNIX TOOLS #
 ##############
@@ -49,14 +49,12 @@ brew install rcm        # dotfile manager
 
 # LANGUAGES #
 #############
-brew install python
+brew install Caskroom/cask/java
 brew install scala
 
 # COMPILERS #
 #############
-brew install apple-gcc42
-brew install gfortran
-brew install freetype
+brew install gcc 	# includes fortran
 
 # Remove outdated versions from the cellar
 brew cleanup
