@@ -1,32 +1,35 @@
 # Make vim the default editor
 export EDITOR="vim"
 
+# BASH HISTORY #
+################
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 
+# LANGUAGE PREFERENCES #
+########################
 # Prefer US English and use UTF-8
 export LANG="en_US"
 export LC_ALL="en_US.UTF-8"
 
-# Define homebrew paths, used in postgres aliases
-export BREW_BASE="/usr/local/"
-export BREW_BIN="$BREW_BASE/bin"
-
+# MAN PAGES #
+#############
 # Highlight section titles in manual pages
 export LESS_TERMCAP_md="$ORANGE"
 
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
-# Define where postgres stores it's data
+# POSTGRES #
+############
+# Define where postgres stores its data
 export PGDATA="/usr/local/var/postgres/"
+
+# Define homebrew paths, used in postgres aliases
+export BREW_BASE="/usr/local/"
+export BREW_BIN="$BREW_BASE/bin"
 
 # This is so that psycopg2 package works.
 export DYLD_FALLBACK_LIBRARY_PATH=/Applications/Postgres93.app/Contents/MacOS/lib:$DYLD_LIBRARY_PATH
-
-# Settings so Dedupe can do parallel processing
-export CFLAGS=-Qunused-arguments
-export CPPFLAGS=-Qunused-arguments
-
