@@ -94,4 +94,12 @@ alias hstop="/usr/local/Cellar/hadoop/2.7.2/sbin/stop-yarn.sh;/usr/local/Cellar/
 
 # PYTHON #
 ##########
-alias p=ipython
+alias p="ipython"
+
+# SPOTIFY #
+###########
+alias e="ssh edgenode-analytics-dev.spotify.net"
+
+# GOOGLE #
+##########
+alias gs="gsutil"
