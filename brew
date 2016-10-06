@@ -46,15 +46,42 @@ brew install tree	# recursive directory listing command
 brew install keybase
 brew tap thoughtbot/formulae
 brew install rcm        # dotfile manager
-
 # LANGUAGES #
 #############
 brew install Caskroom/cask/java
 brew install scala
+brew install maven
+brew install sbt
 
 # COMPILERS #
 #############
 brew install gcc 	# includes fortran
+
+# DOCKER #
+##########
+brew install docker
+brew install docker-machine
+brew install Caskroom/cask/virtualbox
+# Create default docker-machine VM in virtualbox
+docker-machine create --driver virtualbox default
+# Get env commands for new vm
+docker-machine env default
+export DOCKER_TLS_VERIFY="1"
+export DOCKER_HOST="tcp://192.168.99.101:2376"
+export DOCKER_CERT_PATH="/Users/jpvelez/.docker/machine/machines/default"
+export DOCKER_MACHINE_NAME="default"
+# Connect your shell to the default machine
+eval "$(docker-machine env default)"
+
+# HADOOP #
+##########
+brew install avro-tools
+
+# EMACS #
+#########
+brew tap d12frosted/emacs-plus
+brew install emacs-plus --with-cocoa --with-gnutls --with-librsvg --with-imagemagick --with-spacemacs-icon
+brew linkapps
 
 # Remove outdated versions from the cellar
 brew cleanup

@@ -29,10 +29,14 @@ export MANPAGER="less -X"
 ############
 # Define where postgres stores its data
 export PGDATA="/usr/local/var/postgres/"
-
+ 
 # Define homebrew paths, used in postgres aliases
 export BREW_BASE="/usr/local/"
 export BREW_BIN="$BREW_BASE/bin"
 
 # This is so that psycopg2 package works.
 export DYLD_FALLBACK_LIBRARY_PATH=/Applications/Postgres93.app/Contents/MacOS/lib:$DYLD_LIBRARY_PATH
+
+# JAVA CLASSPATH #
+# ################
+export CLASSPATH="/Users/jpvelez/repos/learning-scala/atomic-scala-examples/examples/:$CLASSPATH"

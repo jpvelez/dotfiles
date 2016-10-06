@@ -49,7 +49,7 @@
 [push]
 	default = matching
 [user]
-	email = jpvelez@gmail.com
+	email = jpvelez@spotify.com
 	name = Juan-Pablo Velez
 [credential]
 	helper = osxkeychain
