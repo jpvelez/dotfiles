@@ -99,7 +99,14 @@ alias p="ipython"
 # SPOTIFY #
 ###########
 alias e="ssh edgenode-analytics-dev.spotify.net"
+alias scio="scio-repl"
 
 # GOOGLE #
 ##########
 alias gs="gsutil"
+
+# CORE UTILS #
+##############
+# Use GNU date instead of BSD
+# Did this to debug bq_load.sh as part of content-value project
+alias date="gdate"

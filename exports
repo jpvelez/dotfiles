@@ -40,3 +40,9 @@ export DYLD_FALLBACK_LIBRARY_PATH=/Applications/Postgres93.app/Contents/MacOS/li
 # JAVA CLASSPATH #
 # ################
 export CLASSPATH="/Users/jpvelez/repos/learning-scala/atomic-scala-examples/examples/:$CLASSPATH"
+
+# sp development bin
+# export PATH=$(cd ~/repos/dr/bin && pwd):$PATH
+
+# SBT OPTIONS
+export SBT_OPTS="-Xmx10g -Xmn1g -Dsun.io.serialization.extendedDebugInfo=true"
