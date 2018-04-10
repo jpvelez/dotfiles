@@ -115,6 +115,16 @@ POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='236'
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='196'
 POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='236'
 
+# configure iterm2 natural text editing shortcuts
+# https://stackoverflow.com/questions/6205157/iterm-2-how-to-set-keyboard-shortcuts-to-jump-to-beginning-end-of-line/6363761#6363761 
+# changes hex 0x15 to delete everything to the left of the cursor,
+# rather than the whole line
+bindkey "^U" backward-kill-line
+# binds hex 0x18 0x7f with deleting everything to the left of the cursor
+bindkey "^X\\x7f" backward-kill-line
+# adds redo
+bindkey "^X^_" redo
+
 # ALIASES
 # Better versions of ls
 alias k='k -h'

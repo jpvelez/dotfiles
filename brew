@@ -4,6 +4,12 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
+# INSTALL ZSH, OH MY ZSH, AND POWERLINE 9K THEME
+################################################
+brew install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
 # GNU UNIX COMMANDS #
 ######################
 # Install GNU core utilities (those that come with OS X are outdated)
@@ -33,13 +39,13 @@ brew install less
 brew install vim --override-system-vi
 
 # Other useful tools
+brew install exa
 brew install htop-osx
 brew install sqlite
 brew install tmux
 brew install rsync
 brew install jq		# grep for json
 brew install tree	# recursive directory listing command
-brew install keybase
 brew tap thoughtbot/formulae
 brew install rcm        # dotfile manager
 

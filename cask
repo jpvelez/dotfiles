@@ -10,5 +10,5 @@ brew cask install quiver
 brew cask install slack
 brew cask install spectacle
 brew cask install spotify
-brew cask install toggldesktop
+brew cask install toggl
 brew cask install visual-studio-code 
